@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>护工介绍页</title>
+    <style>
+        body{
+            font-size:62.5%;
+            margin:0
+        }
+        .top{
+            float:left;
+            width:100%;
+            height:3.5rem;
+            background-color:#82c3cd;
+            color:white;
+            font-size:1.8rem;
+            text-align:center;
+        }
+        .pre{
+            float:left;
+            margin-left:1rem;
+            margin-top:0.5rem;
+        }
+        a:link{
+            color: #d1ffd1;
+            text-decoration:none;
+        }
+        a:hover{
+            margin-left:-5px;
+            color:white;
+        }
+        .oldgirl{
+            float:left;
+            width:100%;
+            height:15rem;
+            background-image:url(./images/bgimg.png);
+            /*直接用background也行*/
+            background-size:100% 230%;
+            background-position:0 10%;
+            /*这条的意思是这个DIV的左上角那个点与图片的哪个点重合，从而定位背景图片，我直接PS导出的图
+            所以顶部有虚化的毛边，所以用这个方法重定位，另外阮一峰08年就在学这个。。。我跟大佬差九年~~~加油了*/
+            clear:both;
+        }
+        .girl{
+            float:left;
+             width:7rem;
+             margin:3rem 0 0 2rem;
+         }
+        .name{
+            color:white;
+            float:left;
+            margin:5rem 0 0 2rem;
+            line-height:2.5rem;
+            font-size:1.5rem;
+        }
+    </style>
+</head>
+<body>
+<div class="top">
+    <div class="pre">
+        <a href="#">←</a>
+    </div>
+    <p style="margin:10px 0;padding-left:5%">个人主页</p>
+</div>
+<div class="oldgirl">
+    <div class="girl">
+        <img src="./images/girl.png" style="height:150px;"/>
+    </div>
+    <div class="name">
+        许氏林 55岁<br/>
+        <img src="./images/pin.png" style="height:30px"/><span style="font-size:0.9rem;vertical-align: middle">&nbsp&nbsp&nbsp&nbsp&nbsp京城·四方·保值琳</span>
+    </div>
+
+</div>
+<div class="skills">
+    <div class="skills1"></div>
+    <div class="24h"></div>
+    <div class="exp"></div>
+    <div class="allday"></div>
+    <div class="rmb"></div>
+    <div class="about"></div>
+</div>
+<div class="foot"></div>
+</body>
+</html>
