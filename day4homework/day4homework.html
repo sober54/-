@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆页</title>
+    <style>
+        body{
+            background-color:#eff0f4;
+            margin:0;/*实现内容紧贴边缘的必要*/
+            font-size:62.5%;
+        }
+        .top{
+            margin-top:-1.1rem;
+            font-size:1.3rem;
+            line-height:4.5rem;
+            background-color:#71c6d2;
+            color:white;
+            text-align:center;
+        }
+        .left{
+            vertical-align:middle;
+            margin-left:1rem;
+            float:left;
+            color:white;
+        }
+        .right{
+            vertical-align:middle;
+            margin-right:1rem;
+            float:right;
+            color:white;
+        }
+        a:link{
+            text-decoration:none;
+        }
+        input{
+            width:80%;
+            font-size:1.1rem;
+            float:left;
+            height:2.5rem;
+            line-height:3rem;
+            margin:0.6rem 0;
+            vertical-align:middle;
+            border:none;
+            border-left:dotted #ccc 2px;
+        }
+        img{
+            clear:left;
+            float:left;
+            margin-left:-10px;
+        }
+        .window{
+            clear:both;
+            margin-top:3rem;
+            width:100%;
+            height:30rem;
+        }
+        .submit{
+            height:3rem;
+            color:white;
+            width:100%;
+        }
+        .tele{
+            background-color:white;
+            height:3.5rem;
+            padding:0.6rem;
+            border:#ccc 1px solid;
+        }
+        .login{
+            background-color:white;
+            height:3.5rem;
+            padding:0.6rem;
+            border:#ccc 1px solid;
+        }
+    </style>
+</head>
+<body>
+<div class="top">
+    <a href="https://sober54.github.io/1stwebset/day1homework.html" class="left" target="_blamk">注册</a>
+    <a href="https://sober54.github.io/1stwebset/day3homework.html" class="right" target="_blank">关闭</a>
+    <p style="font-size:35px; margin-top:10px;">登录</p>
+</div>
+<div class="window">
+<form>
+    <div class="tele"><img src="./images/phone.png" height="100%" ><input  type="text" value="请输入手机号"/></div><!--ws提示让我写lable 输入框要lable应该关联谁，去问师兄-->
+
+    <div class="login"><img src="./images/lock.png" height="100%" ><input type="password" value="请输入密码"/></div>
+    <div>
+            <input class="submit" type="submit" value="登&nbsp&nbsp&nbsp&nbsp陆" style="font-size:1.5rem;background-color:#71c6d2">
+    </div>
+</form>
+</div>
+</body>
+</html>
