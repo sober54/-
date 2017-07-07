@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>护工介绍页</title>
-    <style>
+    <style type="text/css">
         body{
             font-size:62.5%;
             margin:0
@@ -11,19 +11,20 @@
         .top{
             float:left;
             width:100%;
-            height:3.5rem;
+            height:4rem;
             background-color:#82c3cd;
             color:white;
             font-size:1.8rem;
             text-align:center;
         }
         .pre{
+            position:absolute;
             float:left;
             margin-left:1rem;
-            margin-top:0.5rem;
+            margin-top:0.4rem;
         }
         a:link{
-            color: #d1ffd1;
+            color: #66ffca;
             text-decoration:none;
         }
         a:hover{
@@ -54,14 +55,89 @@
             line-height:2.5rem;
             font-size:1.5rem;
         }
+        .skills{
+            height:80rem;
+            font-size:1.2rem;
+            vertical-align: middle;
+        }
+        .skills p{
+            float:left;
+            clear:none;
+            vertical-align: middle;
+        }
+        .skills img{
+            float:left;
+            height:4rem;
+            padding:0 0.3rem 0 0.2rem;
+        }
+        .skills div{
+            float:left;
+        }
+        .skills1{
+            width:100%;
+            border-bottom:1px #82c3cd solid;
+        }
+        .skills1 p{
+            border:none;
+            border-left:#82c3cd solid 0.5rem;
+            margin-left:3%;
+            padding-left:1.2rem;
+        }
+        .skills3>div{
+            width:90%;
+            margin-left:5%;
+            border-bottom:1px #82c3cd solid;
+        }
+        .skills3{
+            width:100%;
+        }
+        .skills3 p{
+            float:left;
+            clear:none;
+        }
+        .ccc{
+            float:left;
+            clear:none;
+            color:#ccc;
+            border-right:dotted 0.1rem #82c3cd;
+            padding-right:2rem;
+        }
+        .pad{
+            width:60%;
+            float:left;
+            clear:none;
+            padding-left:2rem;
+        }
+        .foot{
+            width:100%;
+            position:fixed;
+            top:55rem;
+        }
+        .massage{
+            float:left;
+            width:47%;
+            padding:0 0 0 1.9%;
+        }
+        .tele{
+            float:right;
+            width:47%;
+            padding:0 1.9% 0 0;
+        }
+        input{
+            border-radius:0.8rem;
+            border:0.3rem solid #82c3cd;
+            width:95%;
+            height:4rem;
+        }
+        input {outline:none;}
     </style>
 </head>
 <body>
 <div class="top">
     <div class="pre">
-        <a href="#">←</a>
+        <a href="#" style="color:white;">←</a>
     </div>
-    <p style="margin:10px 0;padding-left:5%">个人主页</p>
+    <p style="margin:0.4rem 0;">个人主页</p>
 </div>
 <div class="oldgirl">
     <div class="girl">
@@ -69,18 +145,49 @@
     </div>
     <div class="name">
         许氏林 55岁<br/>
-        <img src="./images/pin.png" style="height:30px"/><span style="font-size:0.9rem;vertical-align: middle">&nbsp&nbsp&nbsp&nbsp&nbsp京城·四方·保值琳</span>
+        <img src="./images/pin.png" style="height:30px"/>
+        <span style="font-size:0.9rem;vertical-align: middle">&nbsp&nbsp&nbsp&nbsp&nbsp京城·四方·保值琳</span>
     </div>
-
 </div>
 <div class="skills">
-    <div class="skills1"></div>
-    <div class="24h"></div>
-    <div class="exp"></div>
-    <div class="allday"></div>
-    <div class="rmb"></div>
-    <div class="about"></div>
+    <div class="skills1">
+        <p>专业技能</p>
+    </div>
+    <div class="skills3">
+    <div class="24h">
+     <div>
+         <img src="./images/star.png" />
+         <p>住家</p>
+         <img src="./images/star.png" />
+         <p>不含餐</p>
+     </div>
+    </div>
+    <div class="exp">
+        <p class="ccc">从业经验</p>
+        <p class="pad">0~3年</p>
+    </div>
+    <div class="allday">
+        <p class="ccc">工作时间</p>
+        <p class="pad">全天</p>
+    </div>
+    <div class="rmb">
+        <p class="ccc">服务价格</p>
+        <p class="pad">25元/小时</p>
+    </div>
+    <div class="about">
+        <p class="ccc">自我介绍</p>
+        <p class="pad">可以洗衣服做饭照顾老人，可以洗衣服做饭照顾小孩，可以洗衣服做饭伺候男主人，偶嘎依娜萨伊骂死，狗秀金撒麻</p>
+    </div>
+    </div>
 </div>
-<div class="foot"></div>
+
+<div class="foot">
+    <div class="massage">
+    <input type="submit" value="留&nbsp&nbsp&nbsp言" style="background-color:white;color:#82c3cd;font-size:1.5rem"/>
+</div>
+    <div class="tele">
+        <input type="submit" value="电话联系" style="background-color:#82c3cd;color:white;font-size:1.5rem"/>
+    </div>
+</div>
 </body>
 </html>
