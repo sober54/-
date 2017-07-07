@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>background-position</title>
+    <style type="text/css">
+        .p1,.p3{
+            float:left;
+            width:100px;
+            height:200px;
+            position:relative;
+            background: #F3F2E2 url(./images/1234.png) no-repeat;
+        }
+        .p1{
+            background-position:0% 0%;
+        }
+        .p3{
+            background-position:0% 100%;
+            /*要以图片里3的左上角开始显示 所以要把整个图像往上移200，
+            要算出Y的百分比就是{200px（框高）-400px（图高）}*y%=-200 y=1就是100%
+             */
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <div class="p1"></div>
+    <div class="p2"></div>
+    <div class="p3"></div>
+    <div class="p4"></div>
+</div>
+<div style="clear:both;margin:20rem;">
+    来自阮一峰的博客
+    题目是：把下面的图利用background-position竖起来，我看了代码，所以要求自己把图片变成方块<br/>
+    <img src="./images/1234.png"> <br/>这个是定义图片的起始点，而且有计算公式的 设容器高=y 容器宽=x<br/>
+    背景图片宽=x1 背景图片高=y1 起始点的位置(X,Y）就等于X=（x-x1)*设置的百分比，Y=（y-y1)*设置的百分比。
+
+</div>
+
+</body>
+</html>
